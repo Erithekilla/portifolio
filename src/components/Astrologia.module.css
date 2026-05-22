@@ -1,0 +1,158 @@
+.astrologia {
+  width: 100%;
+}
+
+.title {
+  width: fit-content;
+  margin: 48px auto 16px;
+  padding: 14px 52px;
+  background: linear-gradient(135deg, rgba(43, 27, 19, 0.96), rgba(18, 11, 9, 0.96));
+  border: 1px solid var(--accent-border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.title h1 {
+  font-family: var(--heading);
+  font-size: clamp(20px, 3vw, 32px);
+  font-weight: 800;
+  color: var(--gold-light);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.horarios{
+    text-align: center;
+    background:
+      linear-gradient(160deg, rgba(43, 27, 19, 0.94), rgba(18, 11, 9, 0.97)),
+      radial-gradient(circle at top, rgba(54, 199, 185, 0.12), transparent 70%);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    width: 65%;
+    padding: 22px 18px;
+    box-shadow: var(--shadow);
+}
+
+.horarios p{
+    margin: 10px 0;
+    font-size: 17px;
+    color: var(--text);
+}
+
+.horarios .planeta-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.planeta-simbolo {
+    font-size: 22px;
+    text-shadow: 0 0 18px currentColor;
+}
+
+.sol { color: #ffd86b; }
+.lua { color: #dfe8f2; }
+.marte { color: #ff6b45; }
+.mercurio { color: #f2bd5b; }
+.jupiter { color: #6ea8ff; }
+.venus { color: #5ee0a6; }
+.saturno { color: #b9835a; }
+
+.energia-card {
+  width: 65%;
+  margin: 24px auto;
+  padding: 24px;
+  background:
+    linear-gradient(160deg, rgba(43, 27, 19, 0.95), rgba(18, 11, 9, 0.98)),
+    linear-gradient(90deg, rgba(214, 166, 64, 0.08), transparent);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.correspondencias-card {
+  width: 65%;
+  margin: 24px auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.correspondencia-item {
+  min-height: 112px;
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  padding: 20px;
+  background:
+    linear-gradient(160deg, rgba(43, 27, 19, 0.95), rgba(18, 11, 9, 0.98)),
+    radial-gradient(circle at top left, rgba(214, 166, 64, 0.12), transparent 75%);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.correspondencia-item strong {
+  color: var(--text-h);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.energia-titulo {
+  font-family: var(--heading);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.energia-desc {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.energia-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.energia-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.energia-label {
+  font-family: var(--heading);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 762px){
+  .energia-card,
+  .horarios,
+  .correspondencias-card{
+    width: 85%;
+  }
+
+  .correspondencias-card {
+    grid-template-columns: 1fr;
+  }
+}
