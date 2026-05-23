@@ -1,7 +1,7 @@
 function Contato() {
     return(
         <section id='contato' className="contato">
-            <h1>Contato</h1>
+            <h1>CONTATO</h1>
             <form action="https://formsubmit.co/montassier.erick2009@gmail.com" method="POST">
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_subject" value="Email de contato!" />

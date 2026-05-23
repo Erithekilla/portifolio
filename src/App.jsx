@@ -4,6 +4,7 @@ import ProjectsCarousel from './components/ProjectsCarousel.jsx';
 import Projetos from './components/Projetos.jsx'
 import Footer from './components/Footer.jsx'
 import Contato from './components/Contato.jsx'
+import Gamedev from './components/Gamedev.jsx'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <main>
         <Presentation />
         <Projetos />
+        <Gamedev />
         <Contato />
       </main>
       <Footer />
