@@ -477,3 +477,182 @@ input::-webkit-inner-spin-button {
         flex-direction: column;
     }
 }
+
+@media (max-width: 720px) {
+    p{
+        font-size: 18px;
+    }
+
+    header{
+        background-position: center top;
+    }
+
+    header img{
+        width: min(82vw, 360px);
+    }
+
+    .btn_header{
+        font-size: 18px;
+        padding: 8px 18px;
+        border: 1px solid var(--golden);
+        border-radius: 5px;
+    }
+
+    .navbar a{
+        font-size: 24px;
+    }
+
+    .titulo{
+        width: 100%;
+        padding: 36px 24px;
+    }
+
+    .titulo h1{
+        font-size: 58px;
+    }
+
+    .titulo p{
+        font-size: 34px;
+    }
+
+    .box{
+        margin: 0;
+        box-shadow: 0 0 18px rgba(255,255,255,0.25);
+    }
+
+    .resumo .box h2{
+        width: 86%;
+        font-size: 42px;
+    }
+
+    .resumo .box p{
+        font-size: 20px;
+        margin: 10px 18px 0 18px;
+    }
+
+    .title_projetos,
+    .gamedev h1{
+        width: 86%;
+        font-size: 36px;
+    }
+
+    .contato h1{
+        width: 55%;
+        font-size: 38px;
+    }
+
+    .fraternidade_arc img{
+        width: 100%;
+    }
+
+    form{
+        width: 90%;
+    }
+
+    .btn{
+        width: 70%;
+    }
+
+    .wallp{
+        background-size: cover;
+        background-position: center top;
+    }
+}
+
+@media (max-width: 480px) {
+    header img{
+        width: min(88vw, 280px);
+    }
+
+    .navbar.ativo{
+        max-height: 280px;
+    }
+
+    .navbar ul{
+        padding: 14px 0 22px 0;
+        gap: 16px;
+    }
+
+    .navbar a{
+        font-size: 21px;
+    }
+
+    .titulo{
+        padding: 30px 16px;
+    }
+
+    .titulo h1{
+        font-size: 44px;
+    }
+
+    .titulo p{
+        font-size: 26px;
+    }
+
+    .box{
+        padding: 22px 0;
+    }
+
+    .resumo .box h2{
+        width: 92%;
+        font-size: 34px;
+    }
+
+    .resumo .box p{
+        font-size: 17px;
+        line-height: 1.45;
+        margin: 9px 14px 0 14px;
+        text-align: center;
+    }
+
+    .projetos,
+    .gamedev{
+        width: 94%;
+    }
+
+    .title_projetos,
+    .gamedev h1{
+        width: 94%;
+        font-size: 28px;
+    }
+
+    .projetos h2,
+    .fraternidade_arc h2{
+        font-size: 25px;
+    }
+
+    .projetos p,
+    .fraternidade_arc p,
+    .astrologia p{
+        font-size: 17px;
+        line-height: 1.45;
+    }
+
+    .contato h1{
+        width: 72%;
+        font-size: 32px;
+    }
+
+    form{
+        width: 92%;
+    }
+
+    form label{
+        font-size: 17px;
+    }
+
+    input,
+    textarea{
+        font-size: 15px;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    footer{
+        min-height: 20vh;
+        height: auto;
+        padding: 24px 16px;
+    }
+}

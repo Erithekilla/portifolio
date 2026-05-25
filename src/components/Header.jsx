@@ -9,7 +9,9 @@ function Header() {
     <header>
       <img src={logoAnkh} alt="Logo Cruz Ankh" />
 
-      <button className="btn_header" onClick={()=> setAberto(!aberto)}>☰</button>
+      <button className="btn_header" type="button" onClick={()=> setAberto(!aberto)}>
+        {aberto ? 'X' : 'Menu'}
+      </button>
 
       <nav className={`navbar ${aberto ? 'ativo' : ''}`} aria-label="Navegacao principal">
         <ul>

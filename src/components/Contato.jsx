@@ -18,7 +18,7 @@ function Contato() {
                 <label htmlFor="contato">Seu nome:</label>
                 <textarea name="contato" id="contato" placeholder="Me conte sobre seu projeto..." rows="6" required></textarea>
 
-                <button type="submit" class="btn">Clique-me</button>
+                <button type="submit" className="btn">Clique-me</button>
             </form>
         </section>
     )
