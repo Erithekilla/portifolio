@@ -1,6 +1,6 @@
 :root{
-    --color-bg: #1a0129;
-    --color-bg2: #11001c;
+    --color-bg: #51080d;
+    --color-bg2: #100101;
     --black: rgb(12, 12, 12);
     --white: rgb(243, 243, 243);
     --golden: #E8B601;
@@ -28,7 +28,7 @@ p{
     font-size: 20px;
 }
 
-h1, h2, .navbar{
+h1, h2, .navbar ul li a{
     font-family: 'Cinzel', serif;
     font-weight: 200;
 }
@@ -39,13 +39,16 @@ a{
 
 header{
     display: flex;
-    flex-direction: row;
-    align-items: end;
+    flex-direction: column;
+    align-items: center;
     border-bottom: 1px solid var(--golden);
+    background-image: url('../img/wppheader.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header img{
-    width: 150px;
+    width: 500px;
 }
 
 .btn_header{
@@ -60,9 +63,9 @@ header img{
 
 .navbar{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 60%;
-    margin-left: auto;
+    margin: 24px auto 34px auto;
 }
 
 .navbar ul{
@@ -71,7 +74,6 @@ header img{
     justify-content: space-between;
     width: 100%;
     list-style: none;
-    margin: 0 100px 10px 0;
 }
 
 .navbar a{
