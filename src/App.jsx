@@ -12,9 +12,11 @@ function App() {
       <Header />
       <main>
         <Presentation />
-        <Projetos />
-        <Gamedev />
-        <Contato />
+        <section className='wallp'>
+          <Projetos />
+          <Gamedev />
+          <Contato />
+        </section>
       </main>
       <Footer />
     </>
