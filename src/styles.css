@@ -219,6 +219,7 @@ header img{
     margin: 0 auto;
     overflow: hidden;
     border: 1px solid var(--golden);
+    border-radius: 15px;
     background-color: var(--black);
 }
 
@@ -226,12 +227,6 @@ header img{
     display: flex;
     height: 100%;
     transition: transform 0.5s ease;
-}
-
-.carrossel img{
-    min-width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 .carrossel-btn{
@@ -247,11 +242,34 @@ header img{
     font-size: 24px;
     cursor: pointer;
     transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
 }
 
 .carrossel-btn:hover{
     background-color: var(--golden);
     color: var(--black);
+}
+
+.slide{
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide img{
+    width: 100%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.slide p{
+    font-size: 20px;
+    margin-top: 12px;
 }
 
 .anterior{
