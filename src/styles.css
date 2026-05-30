@@ -168,7 +168,7 @@ header img{
 .box{
     margin: 20px 0 0 0;
     width: 100%;
-    height: 500px;
+    height: 90%;
     border-bottom: 1px solid var(--golden);
     border-left: 1px solid var(--golden);
     border-top: 1px solid var(--golden);
@@ -382,6 +382,14 @@ textarea{
     border: 1px solid var(--golden);
     color: var(--white);
     border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn:hover{
+    background-color: var(--white);
+    transform: scale(1.1,1.1);
+    color: var(--black);
 }
 
 .contato{
@@ -408,6 +416,17 @@ textarea{
     margin: 20px auto;
     border-bottom: 1px solid var(--golden);
     width: 50%;
+}
+
+.youtube_video{
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+    width: 60%;
+}
+
+.youtube_video iframe{
+    height: 100%;
+    width: 100%;
 }
 
 input::-webkit-outer-spin-button,
