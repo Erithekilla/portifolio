@@ -478,6 +478,9 @@ input::-webkit-inner-spin-button {
     }
 
     .btn_header{
+        padding: 8px 18px;
+        border: 1px solid var(--golden);
+        border-radius: 5px;
         display: block;
         margin: 10px 0 20px 0;
     }
