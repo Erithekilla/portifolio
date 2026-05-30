@@ -513,6 +513,12 @@ input::-webkit-inner-spin-button {
         display: flex;
         flex-direction: column;
     }
+
+    .youtube_video{
+        margin: 0 auto;
+        aspect-ratio: 16/9;
+        width: 90%;
+    }
 }
 
 @media (max-width: 720px) {
